@@ -114,7 +114,7 @@ header{
     width: 50%;
     padding:0 2rem;
     padding-top: 12rem;
-    min-height: 480px;
+    min-height: 600px;
 }
 
 .main h1 span{
@@ -234,6 +234,16 @@ header{
     background: rgb(151, 19, 19);
 }
 
+/* spareparts */
+.sparepart{
+    width: 90vw;
+    margin:1rem auto;
+    padding: 1rem;
+    display: flex;
+    border: 2px solid yellow;
+}
+
+
 
 @media only screen and (max-width: 1070px) {
     .cars{
@@ -257,6 +267,7 @@ header{
     .main{
         width: 100%;
         padding-top: 4rem;
+        min-height: 400px;
     }
     .home{
         background: none;
