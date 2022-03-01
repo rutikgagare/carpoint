@@ -285,6 +285,11 @@ header{
     color: var(--main-color);
 }
 
+.part span{
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
 
 
 @media only screen and (max-width: 1070px) {
