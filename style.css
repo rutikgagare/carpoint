@@ -235,7 +235,7 @@ header{
 }
 
 /* spareparts */
-.sparepart{
+.part{
     width: 90vw;
     margin:1rem auto;
     padding: 1rem;
