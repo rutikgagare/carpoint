@@ -134,7 +134,16 @@ header{
     background: rgb(151, 19, 19);
 }
 
+.cross{
+    color: black;
+    position: absolute;
+    padding: 1rem;
+    bottom: 0.5rem;
+    right: 1rem;
+}
+
 #mobilenav{
+    position: relative;
     width: 100vw;
     text-align: center;
     background-color: white;
