@@ -173,7 +173,7 @@ header{
 .cars{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    margin: 1rem auto;
+    margin: 0.5rem auto;
 }
 
 .car{
@@ -247,6 +247,7 @@ header{
     }
     .main{
         width: 100%;
+        padding-top: 4rem;
     }
     .home{
         background: none;
