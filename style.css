@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #d90429;
+    --text-color: #020102;
+    --bg-color: #fff;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    color: var(--text-color);
+}
+
+.new{
+    width: 100vw;
+    margin: auto;
+}
+
+.home{
+    width: 100vw;
+    margin: auto;
+    background: url('./Images/Background-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;    
+}
+
+.ham{
+    color: black;
+    margin-left: 0.5rem;
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: white;
+}
+
+.navbar .nav ul{
+    display: flex;
+}
+
+.nav ul li{
+    padding: 0 1.2rem;
+}
+
+.nav ul li a{
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.nav ul li a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.navbar .logo{
+    padding-left: 5rem;
+}
+
+.navbar .logo span{
+    color: var(--main-color);
+}
+
+.search{
+    padding: 0rem 3rem;
+}
+
+.search i{
+    color: black;
+}
+
+.search-box{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.search-box input{
+    width: 100%;
+    padding:1rem;
+    border: 2px solid red;
+    border-radius: 0.8rem;
+    display: none;
+}
+
+.search-box input:focus{
+    outline: none;
+}
+
+.main{
+    width: 50%;
+    padding:12rem 4rem;
+    min-height: 640px;
+}
+
+.main h1 span{
+    color: var(--main-color);
+}
+
+.main button{
+    color: white;
+    padding: 0.7rem 1rem;
+    background: var(--main-color);
+    border: none;
+    margin-top: 0.9rem;
+    font-size: 1rem;
+}
+
+.main button:hover{
+    background: rgb(151, 19, 19);
+}
+
+#mobilenav{
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    display: none;
+    top: 3rem;
+}
+
+#mobilenav ul li{
+    padding: 1rem;
+    font-weight: 600;
+}
+
+#mobilenav ul li a{
+    color: var(--text-color);
+}
+
+#mobilenav ul li:hover{
+    background-color: red;
+}
+
+.section{
+    width: 95vw;
+    margin:auto;
+    padding: 1rem 0;
+}
+
+.carsection{
+    text-align: center;
+}
+
+.carsection h3{
+    color: var(--main-color);
+}
+
+.cars{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 1rem auto;
+}
+
+.car{
+    margin: 0.5rem auto;
+}
+
+.car img{
+    width: 350px;
+    height: 200px;
+    /* min-width: 300px; */
+    /* margin: 0.5rem auto; */
+    border-radius: 0.5rem;
+}
+
+.about{
+    width: 90vw;
+    margin:3rem auto;
+    padding: 2rem 0;
+    display: flex;
+}
+
+.about .right{
+    display: flex;
+    flex: 1;
+}
+
+.about .left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+}
+
+.about .left h2{
+    color: var(--main-color);
+}
+
+.about .left button{
+    color: white;
+    padding: 0.7rem 1rem;
+    width: 10rem;
+    background: var(--main-color);
+    border: none;
+    margin-top: 0.9rem;
+    font-size: 1rem;
+}
+
+.about .left button:hover{
+    background: rgb(151, 19, 19);
+}
+
+
+@media only screen and (max-width: 1070px) {
+    .cars{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width: 832px) {
+    .nav{
+        display: none;
+    }
+    .ham{
+        display: inline;
+    }
+    .search i{
+        color: black;
+    }
+    .header{
+        background: white;
+    }
+    .main{
+        width: 100%;
+    }
+    .home{
+        background: none;
+        background-color:rgb(248, 223, 223);
+    }
+    .cars{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .about .right{
+        margin: auto;
+        flex: 0;
+    }
+    .about .right img{
+        display: none;
+    }
+}
+
