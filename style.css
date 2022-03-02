@@ -375,8 +375,8 @@ header{
 }
 
 .footer .logo{
-    padding: 1rem;
-    margin: 1rem auto;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
 }
 
 .footer .icons i{
@@ -384,7 +384,7 @@ header{
 }
 
 .footer .footlist{
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     margin: 0.5rem auto;
 }
 
@@ -413,7 +413,7 @@ header{
     }
     .footer{
         flex-wrap: wrap;
-        text-align: center;
+        /* text-align: center; */
     }
 
 @media only screen and (max-width: 832px) {
@@ -460,7 +460,7 @@ header{
 
     .footer{
         flex-wrap: wrap;
-        text-align: center;
+        /* text-align: center; */
     }
 }
 
