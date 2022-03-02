@@ -354,7 +354,7 @@ header{
 .lstdiv{
     width: 100vw;
     background-color: var(--text-color);
-    margin: 1rem auto;
+    margin: 0rem auto;
 }
 .footer{
     width: 95vw;
